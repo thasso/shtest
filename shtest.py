@@ -54,7 +54,7 @@ def write_xml_results(test_cases, target="shtest.xml"):
                   'time="%.3f">\n' % (fails, len(test_cases),
                                       sum([t.time for t in test_cases])))
         for t in test_cases:
-            out.write('<testcase classname="bash" name="%s" '
+            out.write('<testcase classname="shtest" name="%s" '
                       'time="%.3f">\n' % (t.name, t.time))
             if not t.passed:
                 out.write("<failure message='' "
