@@ -1,7 +1,5 @@
-from distribute_setup import use_setuptools
-use_setuptools()
-import shtest
 from setuptools import setup
+import shtest
 
 setup(
     name='shtest',
