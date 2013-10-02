@@ -7,6 +7,7 @@ setup(
     name='shtest',
     version=shtest.__VERSION__,
     description='''Test runner run executable as tests''',
+    author="Thasso Griebel",
     author_email='thasso.griebel@gmail.com',
     url='https://github.com/thasso/shtest',
     license="BSD",
