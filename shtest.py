@@ -15,7 +15,7 @@ import sys
 import argparse
 
 
-__VERSION__ = "0.1"
+__VERSION__ = "0.2"
 
 _TEST_FILE_PATTERN = r'.*test[s]?.*'
 
@@ -110,7 +110,7 @@ def run_test(name, cwd=False, status=None):
             shutil.rmtree(tmp_dir)
         if status:
             if status != ".":
-                msg = "PASS" if not testcase.passed else "FAIL"
+                msg = "PASS" if testcase.passed else "FAIL"
                 print >>sys.stderr, "%.3f\t\t%s" % (testcase.time, msg)
             else:
                 sys.stderr.write("." if testcase.passed else "F")
